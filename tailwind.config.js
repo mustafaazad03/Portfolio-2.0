@@ -1,8 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*"],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        '9xl': '1px 2px 8px 1px rgba(0, 0, 0, 0.25)',
+        '8xl' : '1px 2px 8px 1px rgba(255, 255, 255, 0.28)'
+      }
+    },
+    colors: {
+      lightb : "#1E656D",
+      darko : "#EDB83D",
+      purple : "#752A07",
+      light : "#F1F3CE",
+      black : "#000000"
+    },
   },
   plugins: [],
 }
