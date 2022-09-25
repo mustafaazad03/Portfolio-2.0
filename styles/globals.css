@@ -11,3 +11,25 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.this::before{
+  content: '';
+  color: var(--blue);
+  animation: animate infinite 6s;
+}
+@keyframes animate{
+  0%{
+    content: 'Web';
+  }
+  10%{
+      content: 'React';
+  }
+  50%{
+      content:'Next';
+  }
+  90%{
+      content: 'Python';
+  }
+  100%{
+    content: 'Web';
+  }
+}

@@ -14,6 +14,11 @@ const Buisness = () => {
 			desc: "Lorem ipsum dolor sit amet consectetur elit. Teneturdeserunt ducimus quidem itaque.",
 			img: "/aboutdark.png",
 		},
+		{
+			name: "Testimonial",
+			desc: "Lorem ipsum dolor sit amet consectetur elit. Teneturdeserunt ducimus quidem itaque.",
+			img: "/aboutdark.png",
+		},
 	];
 	return (
 		<>
@@ -28,6 +33,7 @@ const Buisness = () => {
 					voluptate deleniti eligendi odit fugit nemo tempore atque nisi ab!
 				</p>
 			</div>
+			<div className="flex">
 			{tutor.map((value,idx) => {
 				return(
 					<>
@@ -66,6 +72,7 @@ const Buisness = () => {
 					</>
 				)
 			})}
+			</div>
 			
 			{/* <div id="indicators-carousel" class="relative" data-carousel="static">
     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
