@@ -6,13 +6,13 @@ import About from '../components/About'
 
 export default function Home() {
   return (
-    <>
+    <div className='overflow-hidden'>
       <Navbar/>
       {/* <Layout/> */}
       <Drawer />
       <LandingPage/>
       <About/>
       {/* <Buisness/> */}
-    </>
+    </div>
   )
 }
