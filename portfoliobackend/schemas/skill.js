@@ -15,6 +15,10 @@ export default {
             options : {
                 hotspot : true,
             }
-        },
+        },{
+            name : 'color',
+            title : 'Color',
+            type : 'string',
+        }
     ],
 }
