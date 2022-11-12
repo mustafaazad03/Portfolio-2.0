@@ -38,7 +38,7 @@ const LandingPage = ({contenthome}) => {
         <motion.div animate={{opacity : [0,1], scale : [0,1]}} transition={{duration : 1.2, bounce : 1.3, delay : 0.6}} className="sm:absolute lg:top-[14rem] xl:left-[28rem] sm:left-[12.5rem] lg:left-[16rem] sm:top-[10rem] lg:w-60 lg:h-60 md:w-52 md:h-52 sm:w-44 sm:h-44 w-[15rem] h-[15rem] top-[10rem] mt-[30rem] sm:mt-0 mb-[-34rem] sm:mb-0 mx-auto dark:bg-darko bg-lightb rounded-full">
         </motion.div>
         <motion.div animate={{opacity : [0,1], y : [70,0]}} transition={{duration : 1.2, bounce : 1.3, delay : 0.4}} className="bg-opacity-0 relative hover:grayscale-0 grayscale mb-[-47rem] mt-[15rem] sm:w-[20rem] sm:mt-8 sm:ml-36 sm:mb-[-32rem] lg:mb-[-42rem] lg:ml-[9.5rem] lg:w-[30rem] xl:w-[27rem] xl:ml-[23rem] xl:mb-[-38rem]">
-            <img objectfit='contain' layout='fill' src={urlFor(img).url()}/>
+            <img objectfit='contain' layout='fill' src={urlFor(img).url()} alt="Myself"/>
         </motion.div>
         <motion.div animate={{opacity : [0,1], y : [40,0]}} transition={{duration : 1, bounce : 1.4, delay : 0.45}} className="grid grid-cols-3 sm:justify-around justify-between mt-52 sm:mt-0 mx-[24vw] sm:mx-12 md:mx-20">
         
