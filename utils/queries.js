@@ -60,4 +60,45 @@ const getProject = `
     }
 `
 
-module.exports = {getSkillContentQuery, getAboutContentQuery, getHomeContentQuery, getTimeline, getFooter, getAcard, getCertify, getProject}
+const getBlogsCard = `
+    *[_type=="blog"]{
+        title,
+        desc,
+        img,
+        year,
+        month,
+        slug
+    }
+`
+
+const getProgress = `
+    *[_type=="progress"]{
+        name,
+        percent
+    }
+`
+
+const getPosts = `
+    *[_type=="blog"]{
+        _id,
+        slug {
+            current
+        }
+    }
+`
+
+const getCurrentPost = `
+    *[_type=="blog" && slug.current == $slug][0]{
+        _id,
+        title,
+        publishedAt,
+        content,
+        'comments': *[
+            _type == "comment" &&
+            blog.ref == ^._id &&
+            approved == true
+        ],
+        date
+    }
+`
+module.exports = {getSkillContentQuery, getPosts, getCurrentPost, getBlogsCard, getAboutContentQuery, getHomeContentQuery, getTimeline, getFooter, getAcard, getCertify, getProject, getProgress}

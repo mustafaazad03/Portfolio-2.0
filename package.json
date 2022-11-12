@@ -20,7 +20,8 @@
     "react-animated-progress-bar": "^1.1.1",
     "react-circular-progressbar": "^2.1.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "^7.39.1",
+    "react-hook-form": "^7.39.3",
+    "react-portable-text": "^0.5.1",
     "react-toastify": "^9.1.1"
   },
   "devDependencies": {

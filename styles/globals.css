@@ -14,23 +14,26 @@ body {
 .this::before{
   content: '';
   color: var(--blue);
-  animation: animate infinite 6s;
+  animation: animate infinite 8s;
 }
 @keyframes animate{
   0%{
-    content: 'Web';
+    content: 'NEXT';
   }
-  10%{
+  20%{
       content: 'React';
   }
-  50%{
-      content:'Next';
+  40%{
+      content:'MERN';
   }
-  90%{
+  60%{
       content: 'Python';
   }
+  80%{
+    content: 'Web3';
+  }
   100%{
-    content: 'Web';
+    content: 'NEXT';
   }
 }
 .path{
@@ -73,29 +76,39 @@ body {
 .cont {
   background-image: url(https://images.unsplash.com/photo-1616763355603-9755a640a287?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)
 }
+/* Loader Gyro  */
+@-webkit-keyframes gyro {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg) translateY(calc(var(--radius) * 1%));
+            transform: scale(1) rotate(0deg) translateY(calc(var(--radius) * 1%)); }
+  50% {
+    -webkit-transform: scale(0.5) rotate(1440deg) translateY(0);
+            transform: scale(0.5) rotate(1440deg) translateY(0); }
+  100% {
+    -webkit-transform: scale(1) rotate(2920deg) translateY(calc(var(--radius) * 1%));
+            transform: scale(1) rotate(2920deg) translateY(calc(var(--radius) * 1%)); } }
+@keyframes gyro {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg) translateY(calc(var(--radius) * 1%));
+            transform: scale(1) rotate(0deg) translateY(calc(var(--radius) * 1%)); }
+  50% {
+    -webkit-transform: scale(0.5) rotate(1440deg) translateY(0);
+            transform: scale(0.5) rotate(1440deg) translateY(0); }
+  100% {
+    -webkit-transform: scale(1) rotate(2920deg) translateY(calc(var(--radius) * 1%));
+            transform: scale(1) rotate(2920deg) translateY(calc(var(--radius) * 1%)); } }
 
-.eclipse:before {
-  display: block;
+.gyro:after, .gyro:before {
+  --radius: 250;
+  -webkit-animation: gyro 2s infinite linear;
+          animation: gyro 2s infinite linear;
+  background: #EDB83D;
+  border-radius: 100%;
   content: '';
-  height: 100px;
-  width: 100px;
-  -webkit-animation: eclipse 1s infinite ease;
-  animation: eclipse 1s infinite ease;
-  background-color: #000;
-  border-radius: 100%; }
+  height: 20px;
+  width: 20px;
+  position: absolute; }
 
-@-webkit-keyframes eclipse {
-  from {
-    -webkit-box-shadow: inset 50px 0 0 0 #fff;
-            box-shadow: inset 50px 0 0 0 #fff; }
-  to {
-    -webkit-box-shadow: inset -50px 0 0 0 #fff;
-            box-shadow: inset -50px 0 0 0 #fff; } }
-
-@keyframes eclipse {
-  from {
-    -webkit-box-shadow: inset 50px 0 0 0 #fff;
-            box-shadow: inset 50px 0 0 0 #fff; }
-  to {
-    -webkit-box-shadow: inset -50px 0 0 0 #fff;
-            box-shadow: inset -50px 0 0 0 #fff; } }
+.gyro:before {
+  --radius: -250;
+  background: #1E656D; }
