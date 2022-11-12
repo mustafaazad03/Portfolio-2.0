@@ -44,9 +44,9 @@ export const Footer = ({data}) => {
 						width="55%"
 						height="30%"
 						style={{border:0, marginTop : 25}}
-						allowfullscreen={true}
+						allowFullScreen={true}
 						loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"
+						referrerPolicy="no-referrer-when-downgrade"
 					></iframe>
                     <p className="font-medium mt-1 w-[55%] leading-7 dark:text-light">{address}<br/> 452002</p>
                     <h3 className="dark:text-light">ph: <span className="font-semibold text-lg">+91 {phone}</span></h3>

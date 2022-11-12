@@ -9,8 +9,8 @@ const Pcard = ({pcard}) => {
   return (
     <motion.div ref={ref} className="grid grid-cols-1 sm:grid-cols-2 dark:bg-black lg:grid-cols-3">
         {pcard.map((value,idx) => (   
-            <Link  href={value.link} className='group cursor-pointer'>
-            <article className="group px-4" key={idx}>
+            <Link  href={value.link} key={idx} className='group cursor-pointer'>
+            <article className="group px-4">
         <motion.img  animate={{ opacity :isInView ? [0,1]: [0,0], scale: isInView ? [0,1]: [0,0]}} transition={{duration : 1.2,delay:0.1}}
             alt="Project"
             src={urlFor(value?.img).url()}

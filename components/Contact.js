@@ -38,7 +38,7 @@ const Contact = () => {
 									<motion.div ref={ref} animate={{ opacity :isInView ? [0,1]: [0,0], y: isInView ? [50,0]: [50,50]}} transition={{duration : 1.2, delay : 0.5}}>
                                     <input type="hidden" name="_subject" value="New Message From Website . . .!"/>
 										<label
-											for="email"
+											htmlFor="email"
 											className="block mb-2 text-sm text-gray-600 dark:text-gray-200"
 										>
 											Email Address
@@ -55,7 +55,7 @@ const Contact = () => {
 
 									<motion.div ref={ref} animate={{ opacity :isInView ? [0,1]: [0,0], y: isInView ? [50,0]: [50,50]}} transition={{duration : 1.2, delay : 0.55}} className="mt-4">
 										<label
-											for="Name"
+											htmlFor="Name"
 											className="text-sm text-gray-600 dark:text-gray-200"
 										>
 											Name
@@ -71,7 +71,7 @@ const Contact = () => {
 
 									<motion.div ref={ref} animate={{ opacity :isInView ? [0,1]: [0,0], y: isInView ? [50,0]: [50,50]}} transition={{duration : 1.2, delay : 0.6}} className="mt-4">
 										<label
-											for="message"
+											htmlFor="message"
 											className="text-sm text-gray-600 dark:text-gray-200"
 										>
 											Message
