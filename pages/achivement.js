@@ -32,4 +32,4 @@ export const getServerSideProps = async () => {
           cerify
       }
   }
-  }
+}
