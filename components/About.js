@@ -20,7 +20,7 @@ const About = ({contentabout}) => {
       {/* image div  */}
       <div className="group relative block w-3/4 mx-auto h-2/4">
       <motion.div ref={ref} animate={{ opacity :isInView ? [0,1]: [0,0]}} transition={{duration : 1.5, delay : 0.2}} className='relative flex sm:mx-auto w-full h-[70vh] lg:w-[90%] sm:w-[40vw] sm:h-[50vh] lg:h-[60vh] transform items-end bg-white dark:bg-black transition-transform hover:scale-105 duration-200 ease-in-out '>
-        <Image loading='lazy' objectFit='contain' layout='fill' src={urlFor(contentabout.img).url()}></Image>
+        <Image loading='lazy' objectFit='contain' layout='fill' alt='Portfolio' src={urlFor(contentabout.img).url()}/>
       </motion.div>
       </div>
       <div className="text-center lg:text-left">

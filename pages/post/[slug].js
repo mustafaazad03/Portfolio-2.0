@@ -41,6 +41,7 @@ const Post = (props) => {
             height="100%"
             className="w-full h-full"
             src="/logodark.png"
+            alt="Logo"
         />
         </div>
         </a>

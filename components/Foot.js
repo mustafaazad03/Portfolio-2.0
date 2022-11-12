@@ -22,6 +22,7 @@ export const Footer = ({data}) => {
 								height="100%"
 								className="w-full h-full"
 								src="/logodark.png"
+								alt="Logo Dark"
 							/>
 						</div>
 						<div className="hidden w-20 h-20 dark:block">
@@ -30,6 +31,7 @@ export const Footer = ({data}) => {
 								height="100%"
 								className="w-full h-full "
 								src="/logolight.png"
+								alt="Logo Light"
 							/>
 						</div>
 						<p className="dark:text-light w-[14rem] leading-7">

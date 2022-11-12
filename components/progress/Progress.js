@@ -1,6 +1,6 @@
 import React from 'react'
 import Circular from './Circular'
-import Line from './line'
+import Line from './Line'
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 const Progress = () => {

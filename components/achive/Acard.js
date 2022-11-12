@@ -17,6 +17,7 @@ const Acard = ({cdata}) => {
                             <img
                                 className="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
                                 src={urlFor(value?.logo).url()}
+                                alt="Logo"
                             />
                         </motion.div>
                         <div>

@@ -16,6 +16,7 @@ const project = ({foot, proj}) => {
                 width="100%"
                 height="100%"
                 src="/logodark.png"
+                alt="Logo"
             />
         </motion.div>
         <section className="relative bg-[url(https://images.pexels.com/photos/3183171/pexels-photo-3183171.jpeg?cs=srgb&dl=pexels-fauxels-3183171.jpg&fm=jpg)] bg-cover bg-center bg-no-repeat">
