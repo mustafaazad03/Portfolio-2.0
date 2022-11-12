@@ -49,12 +49,12 @@ const Post = (props) => {
     <div className="block lg:hidden pr-4">
                 <button onClick={() => setNav(!nav)} className="md:hidden rounded-lg focus:outline-none focus:shadow-outline">
                     <svg fill="currentColor" viewBox="0 0 20 20" className="w-6 h-6">
-                        <path className={(!nav)?'block':'hidden'} fill-rule="evenodd"
+                        <path className={(!nav)?'block':'hidden'} fillRule="evenodd"
                             d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                        <path fill-rule="evenodd" className={(!nav)?'hidden':'block'}
+                            clipRule="evenodd"></path>
+                        <path fillRule="evenodd" className={(!nav)?'hidden':'block'}
                             d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
+                            clipRule="evenodd"></path>
                     </svg>
                 </button>
     </div>
@@ -84,7 +84,7 @@ const Post = (props) => {
     {/* <!--Title--> */}
             <h1 className="text-3xl font-bold text-gray-800 dark:text-white lg:text-4xl">{post?.title}</h1>
             <time
-            datetime={post?.publishedAt}
+            dateTime={post?.publishedAt}
             className="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
             >
             <h3 className='text-lg mt-4 text-black/90'>Published At <span className='ml-1 text-black/70 text-[1.15rem]'>{post?.date}</span></h3>

@@ -31,7 +31,7 @@ function Newsletter() {
                 !filled ?
                     <form onSubmit={handleSubmit(onSubmit)} className="lg:w-4/5 w-3/4 sm:w-11/12">
 							<div className="mb-4">
-								<label className="block mb-2 text-xl font-bold text-gray-700 dark:text-light" for="email">
+								<label className="block mb-2 text-xl font-bold text-gray-700 dark:text-light" htmlFor="email">
 									Newsletter
 								</label>
 								<input

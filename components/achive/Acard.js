@@ -10,7 +10,7 @@ const Acard = ({cdata}) => {
 			<motion.h3 ref={ref} animate={{ opacity :isInView ? [0,1]: [0,0], y: isInView ? [50,0]: [50,50]}} transition={{duration : 1}} className="font-semibold text-[2.5rem] dark:text-light text-center mt-4">
 				<span className="text-5xl text-lightb dark:text-darko font-bold">Work</span> With ...
 			</motion.h3>
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:w-[90vw] dark:text-light xl:mx-auto w-[95vw] mx-auto dark:space-x-2 sm:w-full sm:mx-auto h-[60vh] overflow-scroll overflow-x-hidden dark:smain main dark:pr-6 pr-8">
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:w-[90vw] dark:text-light xl:mx-auto w-[95vw] md:w-[90vw] mx-auto dark:space-x-2 sm:w-full sm:mx-auto h-[60vh] md:h-[40vh] overflow-scroll overflow-x-hidden dark:smain main dark:pr-6 pr-8">
 				{cdata.map((value,idx) => (
                     <div className="max-w-md py-4 px-8 bg-white dark:bg-black dark:shadow-light dark:shadow shadow-lg rounded-lg my-20 mx-auto" key={idx}>
                         <motion.div animate={{ opacity : [0,1], scale:[0,1]}} transition={{duration : 1.2, delay : 0.1}} className="flex justify-center md:justify-end -mt-16">
