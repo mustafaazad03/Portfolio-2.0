@@ -16,6 +16,7 @@ const blogs = ({bcard}) => {
             height="100%"
             className="w-full h-full"
             src="/logodark.png"
+            alt='Logo'
         />
     </motion.div>
     <section className="relative bg-[url(https://images.pexels.com/photos/4458/cup-mug-desk-office.jpg?cs=srgb&dl=pexels-picography-4458.jpg&fm=jpg)] bg-cover bg-center bg-no-repeat">
@@ -29,7 +30,7 @@ const blogs = ({bcard}) => {
                 </strong>
             </motion.h1>
             <motion.p ref={ref} animate={{ opacity :isInView ? [0,1]: [0,0], y: isInView ? [50,0]: [50,50]}} transition={{duration : 1.2, delay : 0.3}} className="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
-                This Projects Are Very Important Aspect Of My Learning Journey And Help Me To Improve My Skill<br/>"<em>The greatest enemy of knowledge is not ignorance, it is the illusion of knowledge</em>"<br/><span className='font-semibold'>~ Daniel J. Boorstin ~</span>
+                This Projects Are Very Important Aspect Of My Learning Journey And Help Me To Improve My Skill<br/>&quot;<em>The greatest enemy of knowledge is not ignorance, it is the illusion of knowledge</em>&quot;<br/><span className="font-semibold">~ Daniel J. Boorstin ~</span>
             </motion.p>
             <motion.div ref={ref} animate={{ opacity :isInView ? [0,1]: [0,0], scale: isInView ? [0,1]: [0,0]}} transition={{duration : 1.2, delay : 0.45}} className="mt-8 flex flex-wrap gap-4 text-center">
                 <a href="/" className="block w-full rounded-2xl bg-lightb/90 px-12 py-3 font-semibold text-light hover:bg-lightb shadow focus:outline-none focus:ring active:bg-lightb sm:w-auto">
