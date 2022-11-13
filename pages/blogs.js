@@ -28,6 +28,7 @@ const blogs = ({bcard}) => {
         },
       ]}
       />
+      <div className="overflow-hidden select-none">
     <motion.div ref={ref} animate={{ opacity :isInView ? [0,1]: [0,0], scale: isInView ? [0,1]: [0,0]}} transition={{duration : 1,bounce : 2, bounceDamping:1}} className="block absolute z-50 w-20 h-20 ml-10">
         <Image
             width="100%"
@@ -62,6 +63,7 @@ const blogs = ({bcard}) => {
         </div>
     </section>
         <Bcard cardD = {bcard}/>
+        </div>
     </>
   )
 }
