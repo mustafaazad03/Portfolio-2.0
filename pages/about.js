@@ -26,11 +26,13 @@ const about = ({abouts,foot}) => {
         },
       ]}
       />
+      <div className="overflow-hidden select-none">
         <Navbar/>
         <Drawer/>
         <About contentabout = {abouts}/>
         <Footer data={foot}/>
         <audio className='invisible' src='/music.mp3' autoPlay></audio>
+        </div>
     </>
   )
 }

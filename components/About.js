@@ -9,8 +9,8 @@ const About = ({contentabout}) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <div className='dark:bg-black dark:text-white'>
-    <motion.div ref={ref} animate={{opacity :isInView ? [0,1] : [0,0], y : isInView ? [50,0] : [50,50]}} transition={{duration : 1}} className="flex justify-center">
+    <div ref={ref} className='dark:bg-black dark:text-white'>
+    <motion.div  animate={{opacity :isInView ? [0,1] : [0,0], y : isInView ? [50,0] : [50,50]}} transition={{duration : 1}} className="flex justify-center w-full">
       {/* About Us Heading */}
       <h3 className='font-bold text-3xl mt-[1px] mr-1'>|</h3>
     <h3 className='text-4xl font-bold'>About <span className='text-[30px] text-lightb dark:text-darko'>Me</span></h3>

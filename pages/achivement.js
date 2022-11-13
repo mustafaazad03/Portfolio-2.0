@@ -27,7 +27,7 @@ const achivement = ({foot,acard,cerify}) => {
         },
       ]}
       />
-    <div className='dark:bg-black'>
+    <div className='dark:bg-black overflow-hidden select-none'>
         <Navbar/>
         <Drawer/>
         <Acard cdata = {acard}/>

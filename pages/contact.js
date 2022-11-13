@@ -9,11 +9,13 @@ import { getFooter } from '../utils/queries'
 const contact = ({foot}) => {
   return (
     <>
+        <div className="overflow-hidden select-none">
         <Navbar/>
         <Drawer/>
         <Contact/>
         <Footer data={foot}/>
         <audio className='invisible' src='/music.mp3' autoPlay></audio>
+        </div>
     </>
   )
 }
