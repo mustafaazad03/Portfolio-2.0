@@ -1,8 +1,25 @@
+import { NextSeo } from 'next-seo'
 import React from 'react'
-
 const thanks = () => {
   return (
     <>
+    <NextSeo 
+      title="Thank You"
+      description="This is my portfolio thankyou page and I am a Full-Stack Web Developer & Technology Enthausiast."
+      canonical="https://www.mustafaazad.me/thanks"
+      openGraph={{
+        siteName : "mustafaazad",
+        url : "https://www.mustafaazad.me/thanks",
+        releaseDate: '2022-11-09T22:04:11Z',
+        tags: ['mustafaazad', 'mustafa', 'azad','thank','thankyou','all','subscribe', 'nextjs', 'collage', 'ietdavv','indore', 'madhyapardesh', 'india', 'sanity', 'sanityio','skill','portfolio', 'website','dev', 'developer','amazing','wow','tailwind','css','react','javascript', 'experience', 'working'],
+      }}
+      additionalLinkTags={[
+        {
+          rel: 'icon',
+          href: 'https://www.mustafaazad.me/favicon.ico',
+        },
+      ]}
+      />
       <div className="flex items-center justify-center h-screen">
       <div>
         <div className="flex flex-col items-center space-y-2">

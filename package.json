@@ -16,6 +16,7 @@
     "framer-motion": "^7.5.3",
     "next": "12.2.5",
     "next-sanity": "^1.0.0",
+    "next-seo": "^5.14.1",
     "react": "18.2.0",
     "react-animated-progress-bar": "^1.1.1",
     "react-circular-progressbar": "^2.1.0",

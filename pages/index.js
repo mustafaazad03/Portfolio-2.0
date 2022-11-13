@@ -8,10 +8,28 @@ import { getAboutContentQuery, getFooter, getHomeContentQuery, getProgress, getS
 import Progress from '../components/progress/Progress'
 import { Footer } from '../components/Foot'
 import Contact from '../components/Contact'
+import { NextSeo } from 'next-seo'
 
 export default function Homepage({skills,abouts,homehero,timeline,foot}) {
   return (
     <>
+    <NextSeo 
+      title="Mustafa Azad Portfolio"
+      description="This is my portfolio and I am a Full-Stack Web Developer & Technology Enthausiast."
+      canonical="https://www.mustafaazad.me/"
+      openGraph={{
+        siteName : "mustafaazad",
+        url : "https://www.mustafaazad.me/",
+        releaseDate: '2022-11-10T22:04:11Z',
+        tags: ['mustafaazad', 'mustafa', 'azad', 'nextjs', 'collage', 'ietdavv','indore', 'madhyapardesh', 'india', 'sanity', 'sanityio','skill','portfolio', 'website','dev', 'developer','amazing','wow','tailwind','css','react','javascript', 'experience', 'working'],
+      }}
+      additionalLinkTags={[
+        {
+          rel: 'icon',
+          href: 'https://www.mustafaazad.me/favicon.ico',
+        },
+      ]}
+      />
     <div className='overflow-hidden select-none'>
       <Navbar/>
       <Drawer/>

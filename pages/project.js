@@ -6,11 +6,29 @@ import { sanityClient } from '../sanity'
 import { getFooter, getProject } from '../utils/queries'
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { NextSeo } from 'next-seo'
 const project = ({foot, proj}) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
   return (
     <>
+    <NextSeo 
+      title="Project Section Of Mustafa"
+      description="This is my portfolio Project ection and I am a Full-Stack Web Developer & Technology Enthausiast."
+      canonical="https://www.mustafaazad.me/project"
+      openGraph={{
+        siteName : "mustafaazad",
+        url : "https://www.mustafaazad.me/project",
+        releaseDate: '2022-11-10T22:04:11Z',
+        tags: ['mustafaazad', 'mustafa', 'azad','project','projects','google','keep','clone','post','host','hosting', 'nextjs', 'collage', 'ietdavv','indore', 'madhyapardesh', 'india', 'sanity', 'sanityio','skill','portfolio', 'website','dev', 'developer','amazing','wow','tailwind','css','react','javascript', 'experience', 'working'],
+      }}
+      additionalLinkTags={[
+        {
+          rel: 'icon',
+          href: 'https://www.mustafaazad.me/favicon.ico',
+        },
+      ]}
+      />
         <motion.div ref={ref} animate={{ opacity :isInView ? [0,1]: [0,0], scale: isInView ? [0,1]: [0,0]}} transition={{duration : 1,bounce : 2, bounceDamping:1}} className="block absolute z-50 w-20 h-20 ml-10">
             <Image
                 width="100%"
