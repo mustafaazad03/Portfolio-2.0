@@ -9,7 +9,7 @@ import { getFooter } from '../utils/queries'
 const contact = ({foot}) => {
   return (
     <>
-        <div className="overflow-hidden select-none">
+        <div className="overflow-hidden select-none fontd">
         <Navbar/>
         <Drawer/>
         <Contact/>

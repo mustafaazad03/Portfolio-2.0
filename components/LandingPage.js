@@ -38,7 +38,9 @@ const LandingPage = ({contenthome}) => {
         </svg>
         </Link>
         </motion.div>
-        <motion.div animate={{opacity :isInView? [0,1]:[0,0], scale :isInView? [0,1]:[0,0]}} transition={{duration : 1.2, bounce : 1.3, delay : 0.7}} className="sm:absolute lg:top-[14rem] xl:left-[28rem] sm:left-[12.5rem] lg:left-[16rem] sm:top-[10rem] lg:w-60 lg:h-60 md:w-52 md:h-52 sm:w-44 sm:h-44 w-[15rem] h-[15rem] top-[10rem] mt-[30rem] sm:mt-0 mb-[-34rem] sm:mb-0 mx-auto dark:bg-darko bg-lightb rounded-full">
+        <motion.div animate={{opacity :isInView? [0,1]:[0,0], scale :isInView? [0,1.05]:[0,0]}} transition={{duration : 1.2, bounce : 1.3, delay : 0.7}} className="sm:absolute lg:top-[14rem] xl:left-[28rem] sm:left-[12.5rem] lg:left-[16rem] sm:top-[10rem] lg:hidden md:w-52 md:h-52 sm:w-44 sm:h-44 w-[15rem] h-[15rem] top-[10rem] mt-[30rem] sm:mt-0 mb-[-34rem] sm:mb-0 mx-auto dark:bg-darko bg-lightb rounded-full">
+        </motion.div>
+        <motion.div animate={{opacity :isInView? [0,1]:[0,0], scale :isInView? [0,1.2]:[0,0]}} transition={{duration : 1.2, bounce : 1.3, delay : 0.7}} className="sm:absolute lg:top-[14rem] xl:left-[28rem] sm:left-[12.5rem] md:left-[13rem] lg:left-[16rem] sm:top-[10rem] hidden lg:w-60 lg:h-60 lg:block top-[10rem] mt-[30rem] sm:mt-0 mb-[-34rem] sm:mb-0 mx-auto dark:bg-darko bg-lightb rounded-full">
         </motion.div>
         <motion.div animate={{opacity :isInView? [0,1]:[0,0], y :isInView? [70,0]:[70,70]}} transition={{duration : 1.2, bounce : 1.3, delay : 0.55}} className="bg-opacity-0 relative hover:grayscale-0 grayscale mb-[-47rem] mt-[15rem] sm:w-[20rem] sm:mt-8 sm:ml-36 sm:mb-[-32rem] lg:mb-[-42rem] lg:ml-[9.5rem] lg:w-[30rem] xl:w-[27rem] xl:ml-[23rem] xl:mb-[-38rem]">
             <img objectfit='contain' layout='fill' src={urlFor(img).url()} alt="Mustafa Azad"/>
@@ -51,7 +53,7 @@ const LandingPage = ({contenthome}) => {
         <svg className ="w-[0.7rem] h-[0.7rem] sm:w-[0.9rem] sm:h-[0.85rem]" viewBox="0 0 20 20" fill="none">
         <path d="M7.5 0V7.5H0V12.5H7.5V20H12.5V12.5H20V7.5H12.5V0H7.5Z" className='dark:fill-darko fill-lightb'/>
         </svg>
-        <h3 className='font-bold sm:text-2xl text-lg sm:mt-[-0.7rem] mt-[-1.4rem] dark:text-light sm:mx-2 my-3 sm:my-0 mx-4 counter' data-target="20">20</h3>
+        <h3 className='font-bold sm:text-2xl text-lg sm:mt-[-0.7rem] mt-[-1.4rem] dark:text-light sm:mx-2 my-3 sm:my-0 mx-4 counter' data-target="20">10</h3>
         <h4 className=' dark:text-light font-medium mt-[-0.7rem] text-xs'>Working</h4>
         <h4 className='font-bold sm:my-[3.2vh] sm:ml-[-3rem] sm:mt-[0.45rem] dark:text-light text-xs'>Websites</h4>
         </div>
@@ -73,7 +75,7 @@ const LandingPage = ({contenthome}) => {
         <svg className ="w-[0.7rem] h-[0.7rem] sm:w-[0.9rem] sm:h-[0.85rem]" viewBox="0 0 20 20" fill="none">
         <path d="M7.5 0V7.5H0V12.5H7.5V20H12.5V12.5H20V7.5H12.5V0H7.5Z" className='dark:fill-darko fill-lightb'/>
         </svg>
-        <h3 className='font-bold sm:text-2xl text-lg sm:mt-[-0.7rem] mt-[-1.4rem] dark:text-light sm:mx-2 my-3 sm:my-0 mx-4'>2</h3>
+        <h3 className='font-bold sm:text-2xl text-lg sm:mt-[-0.7rem] mt-[-1.4rem] dark:text-light sm:mx-2 my-3 sm:my-0 mx-4'>1</h3>
         <h4 className=' dark:text-light font-medium mt-[-0.7rem] text-xs'>Years</h4>
         <h4 className='font-bold sm:my-[3.2vh] sm:ml-[-1.8rem] sm:mt-[0.45rem] dark:text-light text-xs'>Experience</h4>
         </div>

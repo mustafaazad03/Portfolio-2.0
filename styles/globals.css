@@ -112,3 +112,7 @@ body {
 .gyro:before {
   --radius: -250;
   background: #1E656D; }
+
+  .fontd {
+    font-family: 'Ubuntu', sans-serif;
+  }
