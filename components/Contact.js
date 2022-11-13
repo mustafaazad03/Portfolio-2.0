@@ -85,7 +85,7 @@ const Contact = () => {
 										/>
 									</motion.div>
                                     <input type="text" name="_honey" className="hidden"/>
-                                    {/* <input type="hidden" name="_captcha" value="true"/> */}
+                                    <input type="hidden" name="_captcha" value="false"/>
                                     <input type="hidden" name="_autoresponse" value={`Hi! You Have Succesfully Message Me, I Will Contact You Soon`}/>
                                     <input type="hidden" name="_template" value="table"/>
 									<input type="hidden" name="_next" value="https://www.mustafaazad.me/thanks"/>
