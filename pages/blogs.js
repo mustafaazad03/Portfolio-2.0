@@ -5,11 +5,29 @@ import { sanityClient } from '../sanity'
 import { getBlogsCard } from '../utils/queries'
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { NextSeo } from 'next-seo'
 const blogs = ({bcard}) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
   return (
     <>
+    <NextSeo 
+      title="Blogs Section Of Mustafa"
+      description="This is my Blogs section, So stay tune with new and latest info about tech universe."
+      canonical="https://www.mustafaazad.me/blogs"
+      openGraph={{
+        siteName : "mustafaazad",
+        url : "https://www.mustafaazad.me/blogs",
+        releaseDate: '2022-11-11T22:04:11Z',
+        tags: ['mustafaazad', 'mustafa', 'azad','blogs','blog','hackers','cyber','security','devs','develope','learn','knowlwdge','me', 'nextjs', 'collage', 'ietdavv','indore', 'madhyapardesh', 'india', 'sanity', 'sanityio','skill','portfolio', 'website','dev', 'developer','amazing','wow','tailwind','css','react','javascript', 'experience', 'working'],
+      }}
+      additionalLinkTags={[
+        {
+          rel: 'icon',
+          href: 'https://www.mustafaazad.me/favicon.ico',
+        },
+      ]}
+      />
     <motion.div ref={ref} animate={{ opacity :isInView ? [0,1]: [0,0], scale: isInView ? [0,1]: [0,0]}} transition={{duration : 1,bounce : 2, bounceDamping:1}} className="block absolute z-50 w-20 h-20 ml-10">
         <Image
             width="100%"
@@ -43,9 +61,7 @@ const blogs = ({bcard}) => {
             </div>
         </div>
     </section>
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-8 mx-auto"> */}
         <Bcard cardD = {bcard}/>
-        {/* </div> */}
     </>
   )
 }

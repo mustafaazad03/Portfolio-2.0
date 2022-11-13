@@ -5,10 +5,27 @@ import { getAboutContentQuery, getFooter} from '../utils/queries'
 import Navbar from '../components/Navbar'
 import Drawer from "../components/Drawer"
 import { Footer } from '../components/Foot'
-
+import { NextSeo } from 'next-seo'
 const about = ({abouts,foot}) => {
   return (
     <>
+      <NextSeo 
+      title="About Section Of Mustafa"
+      description="This is my portfolio About Section and I am a Full-Stack Web Developer & Technology Enthausiast."
+      canonical="https://www.mustafaazad.me/about"
+      openGraph={{
+        siteName : "mustafaazadabout",
+        url : "https://www.mustafaazad.me/about",
+        releaseDate: '2022-11-02T22:04:11Z',
+        tags: ['mustafaazad', 'mustafa', 'azad','about' , 'section' , 'nextjs', 'collage', 'ietdavv','indore', 'madhyapardesh', 'india', 'sanity', 'sanityio','skill','portfolio', 'website','dev', 'developer','amazing','wow','tailwind','css','react','javascript', 'experience', 'working'],
+      }}
+      additionalLinkTags={[
+        {
+          rel: 'icon',
+          href: 'https://www.mustafaazad.me/favicon.ico',
+        },
+      ]}
+      />
         <Navbar/>
         <Drawer/>
         <About contentabout = {abouts}/>

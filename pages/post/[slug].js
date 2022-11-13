@@ -6,6 +6,7 @@ import { getCurrentPost, getPosts } from '../../utils/queries'
 import PortableText from 'react-portable-text'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { motion, useScroll } from "framer-motion";
+import { NextSeo } from 'next-seo'
 
 const Post = (props) => {
     const {post} = props;
@@ -27,6 +28,21 @@ const Post = (props) => {
     };
   return (
     <>
+    <NextSeo 
+      title={post?.title}
+      description="This is blog for tech enthausiast and keep learning and exploring"
+      openGraph={{
+        siteName : "mustafaazad",
+        releaseDate: '2022-11-10T22:04:11Z',
+        tags: ['mustafaazad', 'mustafa', 'azad','post','tech','industry','mine','technology', 'nextjs', 'collage', 'ietdavv','indore', 'madhyapardesh', 'india', 'sanity', 'sanityio','skill','portfolio', 'website','dev', 'developer','amazing','wow','tailwind','css','react','javascript', 'experience', 'working'],
+      }}
+      additionalLinkTags={[
+        {
+          rel: 'icon',
+          href: 'https://www.mustafaazad.me/favicon.ico',
+        },
+      ]}
+      />
         <nav id="header" className="fixed bg-light/80 w-full z-10 top-0 xl:h-20">
 
 <div id="progress" className="h-1 z-20 top-0"></div>

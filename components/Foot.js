@@ -5,10 +5,10 @@ import Newsletter from "./utils/Newsletter";
 export const Footer = ({data}) => {
 	const navlink = [
 		{ name: "Home", link: "/" },
-		{ name: "About", link: "/" },
-		{ name: "Achivement", link: "/" },
-		{ name: "Projects", link: "/" },
-		{ name: "Blog", link: "/" },
+		{ name: "About", link: "/about" },
+		{ name: "Achivement", link: "/achivement" },
+		{ name: "Projects", link: "/project" },
+		{ name: "Blog", link: "/blogs" },
 	];
 	const {para, address, phone} = data;
 	return (
@@ -73,7 +73,7 @@ export const Footer = ({data}) => {
 				<div className="lg:w-11/12 mx-auto lg:py-6 sm:flex sm:justify-between justify-evenly">
 					<span className="text-base text-dark sm:text-center dark:text-light text-center">
 						© {new Date().getFullYear()}{" "}
-						<a href="#" className="hover:underline font-bold">
+						<a href="/" className="hover:underline font-bold">
 							Mustafa Azad Portfolio
 						</a>
 						. All Rights Reserved.
