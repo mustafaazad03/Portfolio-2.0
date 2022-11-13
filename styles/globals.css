@@ -102,7 +102,7 @@ body {
   --radius: 250;
   -webkit-animation: gyro 2s infinite linear;
           animation: gyro 2s infinite linear;
-  background: #EDB83D;
+  background: #fc4445;
   border-radius: 100%;
   content: '';
   height: 20px;

@@ -13,9 +13,10 @@ module.exports = {
       }
     },
     colors: {
-      lightb : "#1E656D",
+      // #1E656D #fc4445
+      lightb : "#fc4445",
       darko : "#EDB83D",
-      purple : "#752A07",
+      purple : "#1E656D",
       light : "#F1F3CE",
       black : "#000000"
     },
