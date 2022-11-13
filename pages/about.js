@@ -26,7 +26,7 @@ const about = ({abouts,foot}) => {
         },
       ]}
       />
-      <div className="overflow-hidden select-none">
+      <div className="overflow-hidden select-none fontd">
         <Navbar/>
         <Drawer/>
         <About contentabout = {abouts}/>

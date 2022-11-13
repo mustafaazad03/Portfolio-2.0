@@ -20,7 +20,7 @@ const thanks = () => {
         },
       ]}
       />
-      <div className="flex items-center justify-center h-screen">
+      <div className="flex items-center justify-center h-screen fontd">
       <div>
         <div className="flex flex-col items-center space-y-2">
           <svg  className="text-green-600 w-28 h-28" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1">

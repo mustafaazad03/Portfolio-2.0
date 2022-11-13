@@ -29,7 +29,7 @@ const project = ({foot, proj}) => {
         },
       ]}
       />
-      <div className="overflow-hidden select-none">
+      <div className="overflow-hidden select-none fontd">
         <motion.div ref={ref} animate={{ opacity :isInView ? [0,1]: [0,0], scale: isInView ? [0,1]: [0,0]}} transition={{duration : 1,bounce : 2, bounceDamping:1}} className="block absolute z-50 w-20 h-20 ml-10">
             <Image
                 width="100%"
