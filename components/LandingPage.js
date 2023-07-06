@@ -130,7 +130,7 @@ const LandingPage = ({ contenthome }) => {
 						className="font-bold sm:text-2xl text-lg sm:mt-[-0.7rem] mt-[-1.4rem] dark:text-light sm:mx-2 my-3 sm:my-0 mx-4 counter"
 						data-target="20"
 					>
-						20
+						12
 					</h3>
 					<h4 className=" dark:text-light font-medium mt-[-0.7rem] text-xs">
 						Working
