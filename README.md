@@ -1,10 +1,14 @@
 # Portfolio Website 2.0
 
 **Light Mode :**
-![image](https://github.com/mustafaazad03/Portfolio-2.0/assets/97380192/6a8c0a25-58ca-4dec-8d42-68410330d4ba)
+
+![image](https://github.com/mustafaazad03/Portfolio-2.0/assets/97380192/e969c550-86fc-4481-91fd-ba63da1cd1f7)
+
 
 **Dark Mode :** 
-![image](https://github.com/mustafaazad03/Portfolio-2.0/assets/97380192/69e86701-043e-4e87-ba32-eade1d5c1af8)
+
+![image](https://github.com/mustafaazad03/Portfolio-2.0/assets/97380192/6e554d0c-b857-48a3-b541-771462fa3d82)
+
 
 
 This repository contains the code for my personal portfolio website built using Sanity CMS, Next.js, and Tailwind CSS. The website serves as a showcase of my projects, skills, and experiences.
