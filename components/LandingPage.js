@@ -96,7 +96,7 @@ const LandingPage = ({ contenthome }) => {
 					y: isInView ? [70, 0] : [70, 70],
 				}}
 				transition={{ duration: 1.2, bounce: 1.3, delay: 0.55 }}
-				className="bg-opacity-0 relative hover:grayscale-0 grayscale mb-[-47rem] mt-[15rem] sm:w-[20rem] sm:mt-8 sm:ml-36 sm:mb-[-32rem] lg:mb-[-42rem] lg:ml-[9.5rem] lg:w-[30rem] xl:w-[27rem] xl:ml-[23rem] xl:mb-[-38rem]"
+				className="bg-opacity-0 relative hover:grayscale-0 grayscale mb-[-47rem] mt-[15rem] sm:w-[20rem] sm:mt-8 sm:ml-36 sm:mb-[-32rem] lg:mb-[-42rem] lg:ml-[9.5rem] lg:w-[30rem] xl:w-[27rem] xl:ml-[23rem] xl:mb-[-38rem] z-30"
 			>
 				<img
 					objectfit="contain"
