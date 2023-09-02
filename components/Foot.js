@@ -45,6 +45,7 @@ export const Footer = ({ data }) => {
 							Address
 						</h3>
 						<iframe
+							title="location-map"
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.6178784365798!2d75.80960861494827!3d22.705264685114713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fdd7acfafc65%3A0x2844ae94d8305a5d!2sNoorani%20Nagar%2C%20Indore%2C%20Madhya%20Pradesh%20452006!5e0!3m2!1sen!2sin!4v1666870243876!5m2!1sen!2sin"
 							width="55%"
 							height="30%"
