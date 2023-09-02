@@ -21,6 +21,7 @@ export const Footer = ({ data }) => {
 								<Image
 									width="100%"
 									height="100%"
+									loading="lazy"
 									className="w-full h-full"
 									src="/logodark.png"
 									alt="Logo Dark"
@@ -30,6 +31,7 @@ export const Footer = ({ data }) => {
 								<Image
 									width="100%"
 									height="100%"
+									loading="lazy"
 									className="w-full h-full "
 									src="/logolight.png"
 									alt="Logo Light"

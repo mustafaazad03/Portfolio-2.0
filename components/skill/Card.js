@@ -8,11 +8,10 @@ const Card = ({ card }) => {
 	const isInView = useInView(ref, { once: true });
 	return (
 		<>
-			<div className="grid grid-cols-3 sm:grid-cols-4 w-[90%] mx-auto h-[55vh] overflow-y-scroll">
+			<div ref={ref} className="grid grid-cols-3 sm:grid-cols-4 w-[90%] mx-auto h-[55vh] overflow-y-scroll">
 				{card.map((value, idx) => {
 					return (
 						<motion.div
-							ref={ref}
 							animate={{
 								opacity: isInView ? [0, 1] : [0, 0],
 								y: isInView ? [50, 0] : [50, 50],
