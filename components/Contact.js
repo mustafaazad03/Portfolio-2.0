@@ -88,7 +88,7 @@ const Contact = () => {
                                     <input type="hidden" name="_captcha" value="false"/>
                                     <input type="hidden" name="_autoresponse" value={`Hi! You Have Succesfully Message Me, I Will Contact You Soon`}/>
                                     <input type="hidden" name="_template" value="table"/>
-									<input type="hidden" name="_next" value="https://www.mustafaazad.me/thanks"/>
+									<input type="hidden" name="_next" value="https://www.mustafaazad.tech/thanks"/>
 
 									<motion.div ref={ref} animate={{ opacity :isInView ? [0,1]: [0,0], y: isInView ? [50,0]: [50,50]}} transition={{duration : 1.2, delay : 0.75}} className="mt-6">
 										<button
